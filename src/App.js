@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import Searchbar from './searchbar';
+// import Searchbar from './searchbar';
+// import taskDone from './taskDone';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <TypedUserItem></TypedUserItem>
-      <Searchbar></Searchbar>
+      {/* <Searchbar></Searchbar> */}
     </div>
   );
 }
@@ -14,16 +15,35 @@ function App() {
 function TypedUserItem(){
   const [list, setList] = useState([]);
   const [inputValue, setInputValue] = useState('');
+  const [count, setCount] = useState(0);
+  const [nextId, setNextId] = useState(1);
+  
+  const updateCounterClicked = () => {
+        setCount(count + 1)
+  };
 
-  // const inputChange = (event) => {
-  //   setInputValue(event.target.value);
-  // };
+  const deleteItem = (itemId) => {
+    const updatedItems = list.filter( item => item.id !== itemId);
+    setList(updatedItems);
+  }
+
+  const doneButtonClicked = (itemId) => {
+    updateCounterClicked();
+    deleteItem(itemId);
+  }
+
   const updateList = () => {
     if (inputValue.trim() !== ''){
-      setList([...list, inputValue]);
+      const newItem = {
+        id: nextId,
+        text: inputValue,
+      };
+      setList([...list, newItem]);
+      setNextId(nextId + 1);
       setInputValue('');
     };
   };
+
   return(
     <form>
       <label for="text-form">Add an item to your To-do: </label>
@@ -32,9 +52,11 @@ function TypedUserItem(){
 
       <ul>
         {list.map((item, index) => (
-          <li key={index}>{item} <button type='button'>Done</button></li> 
+          <li key={index}>{item.text} <button id='doneButton' type='button' onClick={ () => doneButtonClicked(item.id)} >Done</button></li> 
         ))}
       </ul>
+      <h3>Finished task Counter: {count}</h3>
+      
     </form>
   );
 }

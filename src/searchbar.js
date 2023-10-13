@@ -8,7 +8,7 @@ function Searchbar(props){
     return(
         <div>
             <h2>Search for an item: </h2>
-            <from>
+            <form>
                 <label for='name-field' >Name: </label>
                 <input id="name-field" type='text' value={name} onChange={ (e) => setName(e.target.value)} ></input>
                 <label for='price-field' >Price: </label>
@@ -18,7 +18,7 @@ function Searchbar(props){
                 <label for='brand-field' >Brand: </label>
                 <input id="brand-field" type='text' value={brand} onChange={ (e) => setBrand(e.target.value)} ></input>
                 <button type="button">Search</button>
-            </from>
+            </form>
         </div>
     );
 }
