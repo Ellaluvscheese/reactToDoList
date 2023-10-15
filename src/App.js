@@ -58,23 +58,42 @@ function TypedUserItem(){
     };
   };
 
+const celebrate = (count) => {
+  if (count === 0){
+    return
+  }
+  else if (count === 5) {
+    alert("You did your first five tasks! :) ");
+  }
+  else if ((count % 5) === 0){
+    alert("You did it! You completed 5 more tasks! :) ");
+  }
+};
+ 
   // returns html the html elements
   return(
     <form>
-      <label for="text-form">Add an item to your To-do: </label>
-      {/* gets the user input and tracks the text value */}
-      <input type="text" value={inputValue} onChange={ (e) => setInputValue(e.target.value)} autoComplete='off' />
-      {/* the button to click when you want to add the input to the list */}
-      <button type='button' onClick={updateList}>Add item</button>
-
-      <ul>
-        {/* adds the items in the list onto the page and creates a button to click when done with task */}
-        {list.map((item, index) => (
-          <li key={index}>{item.text} <button id='doneButton' type='button' onClick={ () => doneButtonClicked(item.id)} >Done</button></li> 
-        ))}
-      </ul>
+      <section className='card' >
+        <h1>To-Do List</h1>
+        <label for="text-form">Add an item: </label>
+        {/* gets the user input and tracks the text value */}
+        <input type="text" value={inputValue} onChange={ (e) => setInputValue(e.target.value)} autoComplete='off' />
+        {/* the button to click when you want to add the input to the list */}
+        <button className='buttonBoi' type='button' onClick={updateList}>Add </button>
+      </section>
+      <section className='card' > 
+      <h2 className='listh2' >Your List:</h2>
+        <ul>
+          {/* adds the items in the list onto the page and creates a button to click when done with task */}
+          {list.map((item, index) => (
+            <li key={index}> {item.text} <button className='buttonBoi' id='doneButton' type='button' onClick={ () => doneButtonClicked(item.id)}> Done</button></li> 
+          ))}
+        </ul>
+      </section>
       {/* Shows the number of finished tasks */}
-      <h3>Finished task Counter: {count}</h3>
+      <h3>Finished task Counter: </h3>
+      <h3 id='count'>{count} done</h3>
+      {celebrate(count)}
       
     </form>
   );

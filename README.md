@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple web app that works like a To-do list. The user can type an item to add to their list and then check it off when they completed the task. I used a Javascript library called React to build this web application because To-do lists are always super helpful to me and I am always using them. I know how helpful a To-do list can be for me so I wanted to see if I can teach myself useful skills while making a product that I would use.
 
-## Available Scripts
+I was able to teach myself and learn about Javascript and React as I was building this app. I learned about functional and class components as I was writing the code to add a users inputs into a list. I plan to add a nonrelational database to store the users data and make the web application save a users progress / list.
 
-In the project directory, you can run:
 
-### `npm start`
+This is my YouTube demonstration video:
+[Software Demo Video](http://youtube.link.goes.here)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Development Environment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+I used a Javascript library called React. React is used to build single page applications and is super useful when building good user interfaces. I used some Youtube tutorials to set up my React environment and learn some basic things about React. I would also use w3schools when I ran into some troubles or had any specific questions about React's syntax.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Useful Websites
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [W3schools](https://www.w3schools.com/react/default.asp)
+- [React Dev](https://react.dev/learn)
+- [YouTube](https://www.youtube.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Future Work
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add a database
+- Fix styling
+- Add a list of the done tasks
+- Add an edit task button
+- Add a day and time for a task 

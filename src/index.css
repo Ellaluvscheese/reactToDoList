@@ -5,9 +5,64 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.card{
+  border: 3px solid #023047;
+  padding-bottom: 1em;
+  border-radius: 10px; 
+  margin-bottom: 10px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 100%;
+  max-width: 400px;
+  min-width: 100px;
+  text-align: center;
+  background-color: #cbf3f0;
+}
+
+.buttonBoi{
+  color: black;
+  background-color: #3adccc;
+  margin: 1em;
+}
+
+h3{
+  color: #ffbf69;
+  background-color: #023047;
+  padding: 1em;
+  margin: 0;
+  text-align: center;
+}
+
+.listh2, h1{
+  background-color: #ffbf69;
+  color: #023047;
+  margin: 0;
+  padding: 1em;
+  border-radius: 10px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+#count{
+  color: white;
+}
+
+label{
+  color: #023047;
+}
+
+li{
+  color: #023047;
+  padding: 1em;
+  padding-left: 0%;
+  text-align: left;
 }
