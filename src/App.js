@@ -64,9 +64,11 @@ const celebrate = (count) => {
   }
   else if (count === 5) {
     alert("You did your first five tasks! :) ");
+    return
   }
   else if ((count % 5) === 0){
     alert("You did it! You completed 5 more tasks! :) ");
+    return
   }
 };
  
@@ -92,8 +94,8 @@ const celebrate = (count) => {
       </section>
       {/* Shows the number of finished tasks */}
       <h3>Finished task Counter: </h3>
-      <h3 id='count'>{count} done</h3>
-      {celebrate(count)}
+      <h3 id='count'>{celebrate(count)} {count} done</h3>
+      
       
     </form>
   );

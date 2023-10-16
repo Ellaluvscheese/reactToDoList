@@ -6,7 +6,7 @@ I was able to teach myself and learn about Javascript and React as I was buildin
 
 
 This is my YouTube demonstration video:
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://www.youtube.com/watch?v=rLwpUD_7tFQ&ab_channel=EllaGalbraith)
 
 # Development Environment
 
