@@ -7,6 +7,7 @@ I was able to teach myself and learn about Javascript and React as I was buildin
 
 This is my YouTube demonstration video:
 [Software Demo Video](https://www.youtube.com/watch?v=rLwpUD_7tFQ&ab_channel=EllaGalbraith)
+[Added a Database to ruin it Video](https://www.youtube.com/watch?v=AwO215xUWUk)
 
 # Development Environment
 
@@ -22,8 +23,9 @@ I used a Javascript library called React. React is used to build single page app
 
 # Future Work
 
-- Add a database
+- Fix database
 - Fix styling
 - Add a list of the done tasks
 - Add an edit task button
-- Add a day and time for a task 
+- Add a day and time for a task
+- Finish my history page
