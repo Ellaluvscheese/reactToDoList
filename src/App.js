@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { app } from './firebaseConfig';
 import './App.css';
 
 function App() {
